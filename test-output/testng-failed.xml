@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Stock Management]">
+  <listeners>
+    <listener class-name="listener.MyTestNGListener"/>
+  </listeners>
+  <test thread-count="5" name="Add New Stock Test(failed)">
+    <parameter name="action" value="addstock"/>
+    <classes>
+      <class name="testcases.rediff.StockManagement">
+        <methods>
+          <include name="addNewStock"/>
+          <include name="beforeMethod"/>
+          <include name="verifyTransactionHistory"/>
+          <include name="verifyStockQuantity"/>
+          <include name="quit"/>
+          <include name="beforeTest"/>
+          <include name="verifyStockPresent"/>
+        </methods>
+      </class> <!-- testcases.rediff.StockManagement -->
+      <class name="testcases.rediff.PortfolioManagement">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="selectPortFolio"/>
+          <include name="quit"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- testcases.rediff.PortfolioManagement -->
+    </classes>
+  </test> <!-- Add New Stock Test(failed) -->
+</suite> <!-- Failed suite [Stock Management] -->

@@ -1,0 +1,31 @@
+{
+"browsers":["Chrome","Mozilla"],
+"parallelsuites":"1", //set-2 to run in parallel, set-1 to run serially 
+"testsuites":[
+	{
+	 "runmode":"N",
+	 "name":"PortFolio Suite",
+	 "testdatajsonfile":"data//portfoliodata.json",
+	 //"testdataxlsfile":"xls_data//Data.xlsx",
+	 "suitefilename":"suites//portfoliosuite.json",
+	 "paralleltests":"N" //parallel run within 1 test suite Runmode-y
+	},
+	{
+	 "runmode":"N",
+	 "name":"Stock Suite",
+	 "testdatajsonfile":"data//stockdata.json",
+	 //"testdataxlsfile":"xls_data//Data.xlsx",
+	 "suitefilename":"suites//stocksuite.json",
+	 "paralleltests":"N"
+	},
+	{
+	 "runmode":"Y",
+	 "name":"Stock Suite",
+	 "testdatajsonfile":"data//stockdata.json",
+	 //"testdataxlsfile":"xls_data//Data.xlsx",
+	 "suitefilename":"suites//stocksuite.json",
+	 "paralleltests":"N"
+	}
+]
+
+}

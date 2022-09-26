@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SwagLabs Suite">
+    
+  <listeners>
+	<listener class-name="listener.MyTestNGListener"></listener>
+  </listeners>
+  
+ <test name="Swag Labs Login">
+    <classes>
+      <class name="testcases.rediff.SwagLabs">
+       <methods>
+           <include name="testLogin" />
+       </methods>    
+      </class>
+      <class name="testcases.rediff.SwagLabsValidation">
+       <methods>
+           <include name="validationOne" />
+           <include name="validationTwo" />
+           <include name="validationThree" />
+       </methods>    
+      </class>
+       
+    </classes>
+  </test>
+  
+</suite> <!-- Suite -->

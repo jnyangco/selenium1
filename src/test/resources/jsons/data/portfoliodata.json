@@ -1,0 +1,30 @@
+{
+	"testdata":[
+	{
+	   "flag":"createnewportfolio",
+	    "data":[
+	     {
+	     "portfolioname":"Cat110111112",
+	     "runmode":"Y"
+	     },
+	     {
+	     "portfolioname":"Folio2022",
+	     "runmode":"N" //Y-run with set of data, N-run without set of data
+	     }
+	    ]		
+	},
+	{
+	   "flag":"deleteportfolio",
+	    "data":[
+	     {
+	     "portfolioname":"Cat110111112",
+	     "runmode":"N"
+	     },
+	     {
+	     "portfolioname":"Folio2022",
+	     "runmode":"N"
+	     }
+	    ]		
+	}
+]
+}
